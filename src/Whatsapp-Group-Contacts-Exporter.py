@@ -11,6 +11,7 @@ def main():
     input("Scan the QR code to login to whatsapp web and press enter on sucessful login\n")
     driver.find_element_by_xpath('/html/body/div[1]/div/div/div[3]/div/div[1]/div/div/div[2]/div/div[2]').send_keys(grp_name)
     driver.find_element_by_xpath("//span[@title='"+grp_name+"']").click()
+    driver.find_element_by_xpath('/html/body/div[1]/div/div/div[4]/div/header/div[2]').click()
     input()
 
 if __name__ == "__main__":
